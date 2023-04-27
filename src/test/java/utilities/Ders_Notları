@@ -1,0 +1,6 @@
+
+6)API Testlerinde response doğrulama nasıl yapılır?
+   a)TestNG ve JUnit Assert leri kullanılarak
+   b)assertThat()
+   c)Json Path
+   d)Matchers Class
