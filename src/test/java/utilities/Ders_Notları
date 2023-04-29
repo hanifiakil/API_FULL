@@ -4,3 +4,13 @@
    b)assertThat()
    c)Json Path
    d)Matchers Class
+
+
+
+7)Matchers.equalto(): key value şeklinde girilen datanın, eşit olduğunu doğrulamak için kullanılır
+
+8)Matchers.hasSize(): datanın size ını doğrulamak için kullanılır
+
+9)Matchers.hasItem(): girilen tek bir data yı doğrulamak için kullanılır
+
+10)Matchers.hasItems(): girilen birden fazla datayı doğrulamak için kullanılır
