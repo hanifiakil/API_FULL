@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 public class GetRequest08 extends DummyBaseUrl {
-
+// şifreli kısım olduğundan dolayı çalışmıyor
     @Test
     public void test08(){
 
