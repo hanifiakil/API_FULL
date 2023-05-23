@@ -11,10 +11,10 @@ import static io.restassured.RestAssured.given;
 
 public class Authentication {
 
-    public static void main(String[] args) {
-        String güncelToken =generateToken();
-        System.out.println(güncelToken);
-    }
+  //  public static void main(String[] args) {
+      //  String güncelToken =generateToken();
+      //  System.out.println(güncelToken);
+   // }
     public static String generateToken(){
         String username ="Batch44Api";
         String password ="Batch44+";
