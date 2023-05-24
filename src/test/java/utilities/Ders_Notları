@@ -5,6 +5,8 @@
    c)Json Path
    d)Matchers Class
    e)De-senialization
+        Map<String,Object> actualData=response.as(HashMap.class);
+
 
 
 

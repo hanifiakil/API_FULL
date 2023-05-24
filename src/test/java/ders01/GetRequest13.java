@@ -16,7 +16,7 @@ public class GetRequest13 extends GMIBankBaseUrl {
     public void Test13(){
         //1)url oluştur
 
-        spec03.pathParams("bir","tp-customers","iki","114351");
+        spec03.pathParams("bir","tp-customers","iki",114351);
 
         //2)expected data oluştur
 
