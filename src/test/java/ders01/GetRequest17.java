@@ -1,6 +1,7 @@
 package ders01;
 
 import base_url.HerokuappBaseUrl;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.Test;
@@ -56,7 +57,15 @@ public class GetRequest17 extends HerokuappBaseUrl {
         Assert.assertEquals(((Map)expectedTestDataMab.get("bookingdates")).get("checkin"),((Map)actualData.get("bookingdates")).get("checkin"));
         Assert.assertEquals(((Map)expectedTestDataMab.get("bookingdates")).get("checkout"),((Map)actualData.get("bookingdates")).get("checkout"));
 
+        //2. yol
+        JsonPath json =response.jsonPath();
+        Assert.assertEquals(expectedTestDataMab.get("firstname"),json.getString("firstname"));
+        Assert.assertEquals(expectedTestDataMab.get("lastname"),json.getString("lastname"));
+        Assert.assertEquals(expectedTestDataMab.get("totalprice"),json.getInt("totalprice"));
+        Assert.assertEquals(expectedTestDataMab.get("depositpaid"),json.getBoolean("depositpaid"));
 
+        Assert.assertEquals(((Map<?, ?>) expectedTestDataMab.get("bookingdates")).get("checkin"),json.getString("bookingdates.checkin"));
+        Assert.assertEquals(((Map<?, ?>) expectedTestDataMab.get("bookingdates")).get("checkout"),json.getString("bookingdates.checkout"));
 
     }
 }
