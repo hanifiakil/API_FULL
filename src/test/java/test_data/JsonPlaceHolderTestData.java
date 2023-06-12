@@ -36,4 +36,31 @@ public class JsonPlaceHolderTestData {
         return expectedRequest;
 
     }
+
+     //"title","Batch44"
+
+    //patchRequest01 için
+
+    public JSONObject setUpPatchRequestData(){
+        JSONObject requestData=new JSONObject();
+        requestData.put("title","Batch44");
+        return requestData;
+    }
+
+    /*  "userId",10
+              "title","Batch44"
+              "completed",true
+              "id",198
+
+     */
+    //patchRequest01 için
+    public JSONObject setUpPatchExpectedData(){
+        JSONObject expectedData=new JSONObject();
+        expectedData.put("userId",10);
+        expectedData.put("title","Batch44");
+        expectedData.put("completed",true);
+        expectedData.put("id",198);
+        return expectedData;
+
+    }
 }
